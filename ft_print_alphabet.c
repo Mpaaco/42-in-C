@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malima-d <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/22 16:44:35 by malima-d          #+#    #+#             */
-/*   Updated: 2025/04/22 20:40:36 by malima-d         ###   ########.fr       */
+/*   Created: 2025/04/23 14:01:29 by malima-d          #+#    #+#             */
+/*   Updated: 2025/04/23 14:29:51 by malima-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_alphaber(void)
 {
-	write (1, &c, 1);
-}
+	char	letter;
 
-int	main(void)
-{
-	char	c;
-
-	c = 'C';
-	ft_putchar(c);
-	return (0);
+	letter = 'a';
+	while (letter <= 'z')
+	{
+		write(1, &letter, 1);
+		letter++;
+	}
 }
